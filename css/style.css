@@ -1,0 +1,80 @@
+:root {
+    --background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
+    --accent-color: #2196F3;
+    --text-color: #212121;
+    --secondary-text-color: #757575;
+}
+ul {list-style: none;}
+.logo-header {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: var(--text-color);
+}
+.logo-header span {
+    color: var(--accent-color);
+}
+.nav-menu {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+.nav-menu :hover,
+.nav-menu :focus {
+    color: var(--accent-color);
+}
+.mail-header a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+.mail-header :hover,
+.mail-header :focus {
+    color: var(--accent-color);
+}
+.tel-header a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+.tel-header :hover,
+.tel-header :focus {
+    color: var(--accent-color);
+}
+.hero h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.button {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+}
