@@ -30,7 +30,7 @@ ul {list-style: none;}
 .nav-menu :focus {
     color: var(--accent-color);
 }
-.mail-header a {
+.header-contacts a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -39,22 +39,12 @@ ul {list-style: none;}
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 }
-.mail-header :hover,
-.mail-header :focus {
+.header-contacts :hover,
+.header-contacts :focus {
     color: var(--accent-color);
 }
-.tel-header a {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-}
-.tel-header :hover,
-.tel-header :focus {
-    color: var(--accent-color);
+.hero {
+    background-color: var(--secondary-background-color);
 }
 .hero h1 {
     font-family: 'Roboto', sans-serif;
@@ -65,6 +55,7 @@ ul {list-style: none;}
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--background-color);
 }
 .button {
     font-family: 'Roboto', sans-serif;
@@ -131,11 +122,14 @@ ul {list-style: none;}
 .our-team-list p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     /*text-align: center;*/
     letter-spacing: 0.03em;
+}
+.footer {
+    background-color: var(--secondary-background-color);
 }
 .footer-logo {
     font-family: 'Raleway', sans-serif;
@@ -156,17 +150,9 @@ ul {list-style: none;}
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    color: var(--background-color);
 }
-.footer-mail {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-.footer-tel {
+.footer-contacts {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -183,8 +169,13 @@ ul {list-style: none;}
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
+    color: var(--text-color);
     background: #F5F4FA;
     border-radius: 4px;
+}
+.filter-button :hover {
+    color: var(--background-color);
+    background: #2196F3;
 }
 .work-examples h2 {
     font-family: 'Roboto', sans-serif;
