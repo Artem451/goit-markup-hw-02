@@ -34,6 +34,9 @@ body {
 .nav-menu :focus {
     color: var(--accent-color);
 }
+.nav-menu .active {
+    color: var(--accent-color);
+}
 .header-contacts a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -165,6 +168,10 @@ body {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-contacts:focus,
+.footer-contacts:hover {
+    color: var(--accent-color);
+}
 .filter-button {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -174,6 +181,7 @@ body {
     color: var(--text-color);
     background: #F5F4FA;
     border-radius: 4px;
+    cursor: pointer;
 }
 .filter-button:hover,
 .filter-button:focus {
