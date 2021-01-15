@@ -10,12 +10,25 @@ ul {list-style: none;}
 body {
     background: var(--background-color);
 }
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+/*=============== HEADER ===============*/
+
 .logo-header {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.192;
     color: var(--text-color);
 }
 .logo-header span {
@@ -26,7 +39,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.142;
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
@@ -42,7 +55,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.142;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 }
@@ -50,6 +63,11 @@ body {
 .header-contacts :focus {
     color: var(--accent-color);
 }
+
+/*=============== END HEADER ===============*/
+
+/*=============== HERO ===============*/
+
 .hero {
     background-color: var(--secondary-background-color);
 }
@@ -58,7 +76,7 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.363;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -69,19 +87,25 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
     letter-spacing: 0.06em;
     text-align: center;
     border-radius: 4px;
+    cursor: pointer;
     color: var(--background-color);
     background-color: var(--accent-color);
 }
+
+/*=============== END HERO ===============*/
+
+/*=============== FEATURE ===============*/
+
 .feature h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--text-color);
@@ -91,28 +115,24 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
-.represent h2 {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
+
+/*=============== END FEATURE ===============*/
+
+/*=============== OUR TEAM ===============*/
+
 .our-team {
     background: #F5F4FA;
 }
-.our-team h2 {
+.rep-team {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.166;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
@@ -122,19 +142,25 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
 }
 .our-team-list p {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+/*=============== END OUR TEAM ===============*/
+
+/*=============== FOOTER ===============*/
+
+
 .footer {
     background-color: var(--secondary-background-color);
 }
@@ -143,7 +169,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.192;
     letter-spacing: 0.03em;
     color: var(--background-color);
 }
@@ -155,7 +181,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--background-color);
 }
@@ -164,7 +190,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -172,6 +198,12 @@ body {
 .footer-contacts:hover {
     color: var(--accent-color);
 }
+
+/*=============== END FOOTER ===============*/
+
+/*=============== MAIN PORTFOLIO ===============*/
+
+
 .filter-button {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -193,7 +225,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--text-color);
 }
@@ -202,7 +234,10 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1,875;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+
+/*=============== END MAIN PORTFOLIO ===============*/
+
